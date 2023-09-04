@@ -1,0 +1,17 @@
+.header-text{font-size: 30px;font-weight:600;}
+.editorial-policy-banner{background-image: url(src/assets/Images/About/editorial-policy-banner.webp);
+    width:100%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    height:150px;
+    text-align: center;
+    margin: 0px;
+    color:#fff;
+} 
+.note{
+    text-align: center;
+    padding:10px;
+    border:1px solid #007BFF;
+    border-radius:5px;
+    background-color: #007BFF0D;
+}

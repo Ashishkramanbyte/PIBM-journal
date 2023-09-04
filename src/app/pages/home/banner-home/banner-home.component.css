@@ -1,0 +1,8 @@
+.banner{
+    background-image: url(src/assets/Images/banner-1.webp);
+    width:100%;
+    background-size:cover;
+    height:300px;
+    text-align: center;
+    margin: 0px;
+}

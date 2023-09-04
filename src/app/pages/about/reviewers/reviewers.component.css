@@ -1,0 +1,10 @@
+.header-text{font-size: 30px;font-weight:600;}
+.reviewers-banner{background-image: url(src/assets/Images/About/reviewers-banner.webp);
+    width:100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:150px;
+    text-align: center;
+    margin: 0px;
+    color:#fff;
+}

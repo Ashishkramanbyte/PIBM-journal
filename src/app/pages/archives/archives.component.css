@@ -1,0 +1,15 @@
+.header-text{font-size: 30px;font-weight:600;}
+.archives-banner{background-image: url(src/assets/Images/Archives/Archives.webp);
+    width:100%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    height:150px;
+    text-align: center;
+    margin: 0px;
+    color:#fff;
+}
+.published-journals{
+    background-color: #F5F5F5;
+    padding:20px;
+}
+a{text-decoration:none;color: #2B2B2B;}

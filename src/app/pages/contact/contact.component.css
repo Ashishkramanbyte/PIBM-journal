@@ -1,0 +1,34 @@
+.header-text{font-size: 30px;font-weight:600;}
+.Contact-banner{background-image: url(src/assets/Images/Contact-banner.webp);
+    width:100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:150px;
+    text-align: center;
+    margin: 0px;
+    color:#C1C1C1;
+}
+i{font-size:16px; width:20px;height:13px;color:#0E489F;}
+.form-bg{background-image:url(src/assets/Images/Contact-bg.webp); background-repeat: no-repeat;color: #fff;padding:20px 20px;background-size: cover;border-radius:10px;}
+.form-control{background-color:transparent;color:#C1C1C1;}
+.form-group option{color: #000;}
+.btn-outline-success{border-color: #C1C1C1;background-color: transparent;color: #fff;}
+.btn:first-child:active{background-color: transparent;border-color:#C1C1C1}
+.btn-group input{border-radius:0px 5px 5px 0px;}
+.submit{background-color:#F6BD23;}
+:root, [data-bs-theme="light"] {color:#C1C1C1;}
+form{color: #C1C1C1;}
+
+.form-control::placeholder { 
+    color: #C1C1C1;
+    opacity: 1; 
+}
+
+.form-control:-ms-input-placeholder { 
+    color: #fff;
+}
+
+.form-control::-ms-input-placeholder { 
+    color: #fff;
+}
+input{width: 100%;}

@@ -1,0 +1,14 @@
+.header-text{font-size: 30px;font-weight:600;}
+.faqs-banner{background-image: url(src/assets/Images/faqs-banner.webp);
+    width:100%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    height:150px;
+    text-align: center;
+    margin: 0px;
+    color:#fff;
+}
+
+  ::ng-deep:-ms-ngb-panel-title {
+        font-weight: 700;
+}

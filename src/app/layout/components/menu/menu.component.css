@@ -1,0 +1,129 @@
+.menu-container {
+  display: inline-block;
+  width: 100%;
+}
+
+.mega-menu {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);   
+}
+
+.mega-menu-container {
+  width: 100%;
+  display: flex;
+}
+
+.menu-column {
+  width: 100%;
+  flex: 1;
+  padding: 16px;
+}
+
+.menu-heading {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.mat-menu-item {
+  padding: 8px 10px;
+  display: block;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.mat-menu-item:hover {
+  background-color: #f0f0f0;
+}
+  
+.main-menu{background-color: #0E489F;position: sticky;z-index: 9999;top:82px;}
+.menu-column{background-color: aqua;}
+
+/* navigation bar */
+.navbar-light .navbar-nav .active {
+  border-bottom: 2px solid #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+}
+/* end of navigation bar */
+
+/*mega menu*/
+.dropdown-hover {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-hover-content {
+  display: none;
+  position: absolute;
+  margin-top: 2px;
+  background-color: #fff;
+  left: 0;
+  right: 0;
+  padding: 27px 14px 0;
+  z-index: 4;
+}
+
+.dropdown-hover-content .row {
+  width: 100%;
+}
+
+.dropdown-hover-content a.dropdown-item {
+  font-size: 14px;
+  white-space: normal;
+}
+
+.dropdown-hover:hover .dropdown-hover-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+ 
+#link-1.dropdown-hover:hover {
+  border-bottom: 2px solid #37587b;
+}
+
+#link-2.dropdown-hover:hover {
+  border-bottom: 2px solid #37587b;
+}
+/*end of mega menu*/
+
+@media (max-width: 575.98px) {
+  .megamenu {
+    padding: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .megamenu {
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .megamenu {
+    padding: 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+
+
+
+/* New */
+.dropdown-item{padding:10px 0px;border-bottom:1px solid #0E489F;border-style: dotted;width:70%;}
+
+
+
+
+/* New menu */

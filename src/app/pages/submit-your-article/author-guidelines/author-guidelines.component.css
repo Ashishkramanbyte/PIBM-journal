@@ -1,0 +1,15 @@
+.header-text{font-size: 30px;font-weight:600;}
+.author-guidelines-banner{background-image: url(src/assets/Images/submit-your-article/author-guidelines-banner.webp);
+    width:100%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    height:150px;
+    text-align: center;
+    margin: 0px;
+    color:#fff;
+}
+.figures-bg{
+    background-color: #ECEFF4;padding:5px 15px;
+}
+.figures-bg span{color: #051E43;}
+.figures-head{background-color: #051E43;padding:5px 20px;color: #fff;}
