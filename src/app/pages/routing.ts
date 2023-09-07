@@ -12,6 +12,8 @@ import { AuthorGuidelinesComponent } from './submit-your-article/author-guidelin
 import { FAQsComponent } from './faqs/faqs.component';
 import { ContactComponent } from './contact/contact.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
+import { LoginComponent } from '../profile/login/login.component';
+import { CreateAccountComponent } from '../profile/create-account/create-account.component';
 
 const Routing: Routes = [
   {
@@ -154,6 +156,28 @@ const Routing: Routes = [
       {
         path: 'thank-you',                                                                                                                                                                                                                                           
         component: ThankYouComponent,
+      },
+      
+    ],
+  },
+  {
+    path: 'profile/login',
+    component: LoginComponent,
+    children: [
+      {
+        path: 'profile/login',                                                                                                                                                                                                                                           
+        component: LoginComponent,
+      },
+      
+    ],
+  },
+  {
+    path: 'profile/create-account',
+    component: CreateAccountComponent,
+    children: [
+      {
+        path: 'profile/create-account',                                                                                                                                                                                                                                           
+        component: CreateAccountComponent,
       },
       
     ],
