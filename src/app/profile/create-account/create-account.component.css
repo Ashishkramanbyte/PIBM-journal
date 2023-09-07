@@ -2,3 +2,5 @@
     border: 1px solid #dcdfe1;padding: 20px;border-radius: 5px;margin-bottom:40px;
  }
  .btn-outline-success{border-color: #dcdfe1;background-color: transparent;color: #111;}
+ .btn-group input{border-radius:0px 5px 5px 0px;}
+ .form-control{width: 100%;}

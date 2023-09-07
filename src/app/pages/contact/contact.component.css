@@ -14,7 +14,7 @@ mat-icon{font-size:15px; width:20px;height:13px;color:#0E489F;}
 .form-group option{color: #000;}
 .btn-outline-success{border-color: #fff;background-color: transparent;color: #fff;}
 .btn:first-child:active{background-color: transparent;border-color:#fff}
-.btn-group input{border-radius:0px 5px 5px 0px;}
+.btn-group input{border-radius:0px 5px 5px 0px;} 
 .submit{background-color:#F6BD23;}
 :root, [data-bs-theme="light"] {color: #fff;}
 form{color: #fff;}

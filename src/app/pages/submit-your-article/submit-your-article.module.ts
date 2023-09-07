@@ -16,7 +16,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AuthorGuidelinesComponent
-  ],
+  ], 
   imports: [
     CommonModule,
     RouterModule.forChild(routes),

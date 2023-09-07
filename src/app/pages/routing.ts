@@ -143,7 +143,7 @@ const Routing: Routes = [
     component: ContactComponent,
     children: [
       {
-        path: 'contact',                                                                                                                                                                                                                                           
+        path: 'contact',                                                                                                                                                                                                                                            
         component: ContactComponent,
       },
       
