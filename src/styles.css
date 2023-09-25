@@ -111,4 +111,7 @@ li{font-size: 12px;}
 .announcement-body a{background-color: transparent;text-decoration: none;color: #2B2B2B;}
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
- 
+
+.top-flex{margin-top:20px;}
+.flex a{font-size:14px;text-decoration:none;font-weight: 700;}
+.flex a:hover{color:#f6bd23;} 

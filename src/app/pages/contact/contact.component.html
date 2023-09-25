@@ -5,6 +5,25 @@
 
     </div>
   </div>
+  <div class="container-fluid">          
+    <nav class="flex top-flex" aria-label="Breadcrumb">
+<ol class="inline-flex items-center space-x-1 md:space-x-3 pl-0">
+  <li class="inline-flex items-center">
+    <a href="/home" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
+      <i class="fa fa-home mr-2"></i>
+      Home
+    </a>
+  </li>
+  <li>
+    <div class="flex items-center">
+      <i class="fa fa-angle-right"></i>
+      <a href="/contact" class="ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2 dark:text-gray-400 dark:hover:text-white">Contact</a>
+    </div>
+  </li>
+</ol>
+    </nav>
+
+  </div>
 </section>
 
 <section class="mt-5">
@@ -53,31 +72,39 @@
         </div>
         <div class="col-lg-6 col-12">
           <div class="row form-bg">
-            <form class="row">
+            <form class="row" [formGroup]="EnqueryForm" (ngSubmit)="onSubmit()">
               <div class="col-lg-12 form-group mt-2">
-                <input type="Name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                  placeholder="Name *">
+                <input type="Name" formControlName="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" 
+                placeholder="Name *">
+                <div *ngIf="f['name'].invalid && (f['name'].touched || submitted)">
+                  <small *ngIf="f['name'].errors?.['required']" class="text-danger">Full Name is required</small>
+              </div>
               </div>
               <div class="col-lg-12 form-group mt-2">
-                <input type="Author" class="form-control" id="exampleInputPassword2"
+                <input type="Author" formControlName="authorId" class="form-control" id="exampleInputPassword2"
                   placeholder="Author ID (if applicable)">
               </div>
               <div class="col-lg-6 form-group mt-2">
-                <input type="Email" class="form-control" id="exampleInputPassword2" placeholder="Email *">
+                <input type="Email" class="form-control" formControlName="email" id="exampleInputPassword2" placeholder="Email *">
+                <div *ngIf="f['email'].invalid && (f['email'].touched || submitted)">
+                  <small *ngIf="f['email'].errors?.['required']" class="text-danger">Email is required</small>
+                  <small *ngIf="f['email'].errors?.['pattern']" class="text-danger">please Enter a valid Email </small>
               </div>
-              <div class="col-lg-6 form-group mt-2">
-                <div class="btn-group"> 
+              </div>
+              <div class="col-lg-6 form-group btn-group mt-2">
                   <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
                     <select class="btn btn-outline-success" ngbDropdownToggle>
                       <option value="91">+91</option>
                       <option value="92">+92</option>
                       <option value="93">+93</option>
                     </select>
-
                   </div>
-                  <input type="Phone" class="form-control" id="exampleInputPassword2" placeholder="Phone *">
-                </div>
+                  <input type="Phone" class="form-control" id="exampleInputPassword2" formControlName="mobileNo" placeholder="Phone *" pattern="[0-9]*">
               </div>
+              <div class="col-lg-6"></div>
+              <div class="col-lg-6"><div *ngIf="f['mobileNo'].invalid && (f['mobileNo'].touched || submitted)">
+                <small *ngIf="f['mobileNo'].errors?.['required']" class="text-danger">Phone is required</small>
+                </div></div>
               <div class="col-lg-4 form-group mt-2">
                 <!-- <select country_id="countries" class="form-control"  (change)="onCountryChange($event.target.value)">
                   <option>Country *</option>
@@ -85,45 +112,57 @@
                 </select> -->
                 <!-- <select countryId="countries" (change)="onCountrySelected($event.target.value)"> -->
                   <!-- <select class="form-control" id="countrySelect" [(ngModel)]="selectedCountry" (change)="onCountrySelected($event.target.value)"> -->
-                    <select class="form-control" id="exampleFormControlSelect1" (change)="selectedState($event)">
+                    <select class="form-control" formControlName="country" id="exampleFormControlSelect1" (change)="selectedState($event)">
                   <option value="">Select a country *</option>
                   <option *ngFor="let country of countries" [value]="country.country_id">{{ country.country_name }}</option>
                 </select>
+                <div *ngIf="f['country'].invalid && (f['country'].touched || submitted)">
+                  <small *ngIf="f['country'].errors?.['required']" class="text-danger">Select a Country</small>
+                  </div>
               </div>
               <div class="col-lg-4 form-group mt-2">
                 <!-- <select class="form-control" id="stateSelect" [(ngModel)]="selectedState" [ngModelOptions]="{ standalone: true }"> -->
                   <!-- <select class="form-control" state_id="states" (change)="onStateSelected($event.target.value)" > -->
-                    <select class="form-control" id="stateSelect" (change)="selectedCity($event)">         
+                    <select class="form-control" formControlName="state" id="stateSelect" (change)="selectedCity($event)">         
                    <option value="">select State *</option>
                   <option *ngFor="let state of states" [value]="state.state_id">{{ state.state_name }}</option>
                 </select>
+                <div *ngIf="f['state'].invalid && (f['state'].touched || submitted)">
+                  <small *ngIf="f['state'].errors?.['required']" class="text-danger">Select a State</small>
+                  </div>
               </div>
               <div class="col-lg-4 form-group mt-2">
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control" id="exampleFormControlSelect1" formControlName="city">
                   <option>City *</option>
                   <option *ngFor="let city of city" [value]="city.suburb_id">{{ city.suburb_name }}</option>
                 </select>
+                <div *ngIf="f['city'].invalid && (f['city'].touched || submitted)">
+                  <small *ngIf="f['city'].errors?.['required']" class="text-danger">Select a City</small>
+                  </div>
               </div>
               <div class="col-lg-12 form-group mt-2">
-                <input type="University/organization" class="form-control" id="exampleInputPassword2"
+                <input type="University/organization" formControlName="university" class="form-control" id="exampleInputPassword2"
                   placeholder="University/organization">
               </div>
               <div class="col-lg-6 form-group mt-2">
-                <input type="Department" class="form-control" id="exampleInputPassword2" placeholder="Department">
+                <input type="Department" class="form-control" formControlName="department" id="exampleInputPassword2" placeholder="Department">
               </div>
               <div class="col-lg-6 form-group mt-2">
-                <input type="Subject" class="form-control" id="exampleInputPassword2" placeholder="Subject of Inquiry">
+                <input type="Subject" formControlName="subject" class="form-control" id="exampleInputPassword2" placeholder="Subject of Inquiry">
               </div>
               <div class="col-lg-12 form-group mt-2">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                <textarea class="form-control" formControlName="message" id="exampleFormControlTextarea1" rows="3"
                   placeholder="Message/Question *"></textarea>
+                  <div *ngIf="f['message'].invalid && (f['message'].touched || submitted)">
+                    <small *ngIf="f['message'].errors?.['required']" class="text-danger">please write something</small>
+                    </div>
               </div>
               <div class="col-lg-12 form-group mt-2">
-                <input type="Manuscript" class="form-control" id="exampleInputPassword2"
+                <input type="Manuscript" class="form-control" formControlName="title" id="exampleInputPassword2"
                   placeholder="Manuscript Title (if related to a specific submission)">
               </div>
               <div class="col-lg-12 form-group mt-2">
-                <input type="Manuscript-id" class="form-control" id="exampleInputPassword2"
+                <input type="Manuscript-id" class="form-control" formControlName="scriptId" id="exampleInputPassword2"
                   placeholder="Manuscript ID (if applicable)">
               </div>
               <div class="col-lg-10 form-group mt-2"></div>

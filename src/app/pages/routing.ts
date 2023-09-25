@@ -106,22 +106,22 @@ const Routing: Routes = [
     ],
   },
   {
-    path: 'SubmitYourArticle',
+    path: 'Submityourarticle',
     component: SubmitYourArticleComponent,
     children: [
       {
-        path: 'SubmitYourArticle',                                                                                                                                                                                                                                           
+        path: 'Submityourarticle',                                                                                                                                                                                                                                           
         component: SubmitYourArticleComponent,
       },
       
     ],
   },
   {
-    path: 'SubmitYourArticle/AuthorGuidelines',
+    path: 'Submityourarticle/AuthorGuidelines',
     component: AuthorGuidelinesComponent,
     children: [
       {
-        path: 'SubmitYourArticle/AuthorGuidelines',                                                                                                                                                                                                                                           
+        path: 'Submityourarticle/AuthorGuidelines',                                                                                                                                                                                                                                           
         component: AuthorGuidelinesComponent,
       },
       

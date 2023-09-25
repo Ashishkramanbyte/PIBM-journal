@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Enquery } from '../Model/LocationResponse';
 
 @Injectable({
   providedIn: 'root'
@@ -23,5 +24,10 @@ export class ApiService {
     debugger;
     // Make an HTTP GET request to fetch the states for the selected country
     return this.http.get<any[]>(`${this.apiUrl}/Location/GetCityList/${stateId}`);
+  }
+  SubmitEnquery(enquery: Enquery): Observable<any[]> {
+    debugger;
+    // Make an HTTP GET request to fetch the states for the selected country
+    return this.http.post<any[]>(`${this.apiUrl}/Enquiry/InsertEnquiry`,enquery);
   }
 }

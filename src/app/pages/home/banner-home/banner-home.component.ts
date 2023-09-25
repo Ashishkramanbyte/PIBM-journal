@@ -19,5 +19,7 @@ export class BannerHomeComponent {
   //   this.dialogOpen = true;
   // }
 
-
+   
 }
+
+

@@ -4,6 +4,7 @@ import { HomeComponent } from './home.component';
 import { RightMenuComponent } from './right-menu/right-menu.component';
 import { BannerHomeComponent } from './banner-home/banner-home.component';
 import { LeftMenuComponent } from './left-menu/left-menu.component';
+
 @NgModule({
   declarations: [
     HomeComponent,
@@ -16,5 +17,8 @@ import { LeftMenuComponent } from './left-menu/left-menu.component';
   ],
 
   schemas: [CUSTOM_ELEMENTS_SCHEMA], // Add this line
+ 
 })
-export class HomeModule { }
+export class HomeModule { 
+  
+}

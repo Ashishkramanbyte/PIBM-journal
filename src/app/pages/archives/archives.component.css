@@ -13,3 +13,5 @@
     padding:20px;
 }
 a{text-decoration:none;color: #2B2B2B;}
+.flex a{color:#fff;}
+.flex a:hover{color:#f6bd23;}

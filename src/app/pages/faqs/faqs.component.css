@@ -12,3 +12,5 @@
   ::ng-deep:-ms-ngb-panel-title {
         font-weight: 700;
 }
+.flex a{color:#fff;}
+.flex a:hover{color:#f6bd23;}
