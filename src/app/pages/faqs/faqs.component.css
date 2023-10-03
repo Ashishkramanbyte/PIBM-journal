@@ -6,7 +6,7 @@
     height:150px;
     text-align: center;
     margin: 0px;
-    color:#fff;
+    /* color:#fff; */
 }
 
   ::ng-deep:-ms-ngb-panel-title {

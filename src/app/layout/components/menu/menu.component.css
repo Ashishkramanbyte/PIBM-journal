@@ -129,6 +129,6 @@ button{color:#fff;}
 
 
 /* New */
-.dropdown-item{padding:10px 0px;border-bottom:1px solid #0E489F;border-style: dotted;width:70%;}
-
+.dropdown-item{padding:10px 0px;border-bottom:1px solid #0E489F;border-style: dotted;width:80%;}
+#dropdownNavbar li{border-bottom:1px dotted #111; padding-right:20px;}
 /* New menu */
