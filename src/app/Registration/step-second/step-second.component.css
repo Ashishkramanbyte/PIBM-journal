@@ -48,10 +48,18 @@
     transition: transform 200ms;
     width:70px;
   }
-  
   .cut-full {
-    width:110px;
+    background-color: #ffffff;
+    border-radius:5px;
+    height:10px;
+    left: 20px;
+    position: absolute;
+    top: -10px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width:120px;
   }
+ 
   
   .input:focus ~ .cut ,
   .input:not(:placeholder-shown) ~ .cut {
@@ -83,3 +91,7 @@
   }
   #defaultModal{z-index:9999;}
  #otp input{width:50px; height:50px;font-size: 18px;}
+ .custom-checkbox input{
+color: #F6BD23;
+ }
+

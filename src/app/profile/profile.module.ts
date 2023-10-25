@@ -6,6 +6,7 @@ import { Routing } from '../pages/routing';
 import { RouterModule, Routes } from '@angular/router';
 import { CreateAccountComponent } from './create-account/create-account.component';
 
+
 const routes: Routes = [
   {
     path: '',
@@ -18,7 +19,7 @@ const routes: Routes = [
   declarations: [
     ProfileComponent,
     LoginComponent,
-    CreateAccountComponent
+    CreateAccountComponent,
   ],
   imports: [
     CommonModule,

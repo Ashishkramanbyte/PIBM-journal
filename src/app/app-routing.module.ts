@@ -12,6 +12,11 @@ export const routes: Routes = [
     loadChildren: () =>
       import('./profile/profile.module').then((m) => m.ProfileModule),
   },
+  {
+    path: 'Registration',
+    loadChildren: () =>
+      import('./Registration/registration.module').then((m) => m.RegistrationModule),
+  },
   { path: '**', redirectTo: 'error/404' },
 ];
 

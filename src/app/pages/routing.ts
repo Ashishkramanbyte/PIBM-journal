@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
 import { LoginComponent } from '../profile/login/login.component';
 import { CreateAccountComponent } from '../profile/create-account/create-account.component';
+import { RegistrationComponent } from '../Registration/registration.component';
 
 const Routing: Routes = [
   {
@@ -23,8 +24,8 @@ const Routing: Routes = [
       {
         path: 'home',                                                                                                                                                                                                                                           
         component: HomeComponent,
+        
       },
-      
     ],
   },
  
@@ -178,6 +179,17 @@ const Routing: Routes = [
       {
         path: 'profile/create-account',                                                                                                                                                                                                                                           
         component: CreateAccountComponent,
+      },
+      
+    ],
+  },
+  {
+    path: 'Registration',
+    component: RegistrationComponent,
+    children: [
+      {
+        path: 'Registration',                                                                                                                                                                                                                                           
+        component: RegistrationComponent,
       },
       
     ],

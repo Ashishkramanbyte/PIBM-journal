@@ -13,7 +13,7 @@ import { LeftMenuComponent } from './left-menu/left-menu.component';
     LeftMenuComponent
   ],
   imports: [
-    CommonModule,    
+    CommonModule,  
   ],
 
   schemas: [CUSTOM_ELEMENTS_SCHEMA], // Add this line

@@ -14,3 +14,6 @@
 }
 .flex a{color:#fff;}
 .flex a:hover{color:#f6bd23;}
+.collapse {
+  visibility:visible;
+}
