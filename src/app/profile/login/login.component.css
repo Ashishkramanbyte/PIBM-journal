@@ -1,3 +1,99 @@
-.login-bg{
-   border: 1px solid #dcdfe1;padding: 20px;border-radius: 5px;margin-bottom:auto;
+.account-bg{
+   border: 1px solid #dcdfe1;padding: 20px;border-radius: 5px;margin-bottom:40px;
+}
+.btn-outline-success{border-color: #dcdfe1;background-color: transparent;color: #111;}
+.btn-group input{border-radius:0px 5px 5px 0px;}
+.form-control{width: 100%;}
+.btn-outline-success{background-color: transparent;}
+.btn:first-child:active{background-color: transparent;}
+.form-control{background-color:transparent;}
+.form-group option{color: #000;}
+.create-ac{background-image:url(src/assets/Images/create-ac.webp);height:100vh;background-repeat: no-repeat;width:100%;}
+.create-ac-text{
+   padding:50% 0;
+}
+.form-div{padding:0px 40px;}
+
+ .input-container {
+   position: relative;
+ }
+ 
+ .ic1 {
+   margin-top:15px;
+ }
+ 
+ .ic2 {
+   margin-top: 15px;
+ }
+ 
+ .input {
+   border-radius:5px;
+   border: 0;
+   color: #292929;
+   height:40px;
+   padding: 4px 20px 0;
+   width: 100%;
+   border:1px solid #C1C1C1;
+   border-radius:5px;
+ }
+ 
+ .cut {
+   background-color: #ffffff;
+   border-radius:5px;
+   height:10px;
+   left: 20px;
+   position: absolute;
+   top: -10px;
+   transform: translateY(0);
+   transition: transform 200ms;
+   width:70px;
+ }
+ .cut-full {
+   background-color: #ffffff;
+   border-radius:5px;
+   height:10px;
+   left: 20px;
+   position: absolute;
+   top: -10px;
+   transform: translateY(0);
+   transition: transform 200ms;
+   width:120px;
+ }
+
+ 
+ .input:focus ~ .cut ,
+ .input:not(:placeholder-shown) ~ .cut {
+   transform: translateY(8px);
+ }
+ 
+ .placeholder {
+   left: 20px;
+   pointer-events: none;
+   position: absolute;
+   transform-origin: 0 50%;
+   transition: transform 200ms, color 200ms;
+   top:10px;
+   background-color: #fff;
+ }
+ 
+ .input:focus ~ .placeholder,
+ .input:not(:placeholder-shown) ~ .placeholder {
+   transform: translateY(-20px) translateX(10px) scale(0.75);
+ }
+ 
+ .input:not(:placeholder-shown) ~ .placeholder {
+   color: #0E489F;
+ }
+ 
+ .input:focus ~ .placeholder {
+   color: #0E489F;
+   font-size: 13px;
+ }
+ #defaultModal{z-index:9999;}
+#otp input{width:50px; height:50px;font-size: 18px;}
+.custom-checkbox input{
+color: #F6BD23;
+}
+.login-img{
+  background-image:url(src/assets/Images/login-bg.webp);height:500px;background-repeat: no-repeat;width:100%;margin:10%;padding:20px;background-size: contain;
 }

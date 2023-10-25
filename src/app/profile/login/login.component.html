@@ -1,37 +1,58 @@
-<section class="mt-5">
-    <div class="container-fluid">
-  
-      <div class="col-lg-12 mb-5">
-        <div class="row">
-            <div class="col-lg-2 col-12"></div>
-          <div class="col-lg-4 col-12">
-              
-                <img src="assets/Images/Contact-1.webp" width="300px" class="mt-5">
-  
-            </div>
-            <div class="col-lg-4 col-12 mt-5">
-              <h3 class="text-center"><b>Login</b></h3>
-                <div class="row login-bg mt-3">
-                  <form class="row">
-                    <div class="col-lg-12 form-group mt-3">
-                      <input type="Email" class="form-control" id="exampleInputPassword2" placeholder="Login id or Email *">
-                    </div>
-                    <div class="col-lg-12 form-group mt-3">
-                      <input type="Password" class="form-control" id="exampleInputPassword2"
-                        placeholder="Password *">
-                    </div>
-                    <div class="col-lg-12 mt-3 text-center">
-                        <a href="">Forgot Password</a> &nbsp;&nbsp; <a href="">Create Account</a>
-                      </div>
-                    <div class="col-lg-4"></div>
-                    <div class="col-lg-4 form-group mt-4"><button type="submit" class="btn btn-primary submit w-100">Submit</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-          </div>
-          
-          <div class="col-lg-3 col-12"></div>
+<div class="row">
+  <div class="col-lg-8 col-12">
+    <div class="create-ac">
+    <div class="container-fluid"> 
+    <div class="row ">
+      <div class="col-lg-1 col-3"></div>
+      <div class="col-lg-8 col-9">
+        <div class="login-img">
+          <div style="margin-top:70%;">
+          <div class="col-lg-1 col-3 mt-3"><p style="border-bottom:3px solid #F6BD23;width:100%;"></p></div>
+          <div class="col-lg-8 col-3 mt-3" >
+          <h3>Work Hard, Read Harder</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
         </div>
       </div>
-  </section>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+  <div class="col-lg-4 col-12">
+    <div class="container-fluid form-div">
+      <p align="center"><img src="assets/Images/logo.webp" class="mt-3" width="150px"></p>
+      <div class="text-center mt-5">
+        <h3><b>Login</b></h3>
+        <p>Don't have an account? &nbsp;<a href="#">Sign Up</a></p>
+      </div>
+ 
+      <div class="row">
+        <div class="col-lg-12 input-container ic1 ">
+          <input id="firstname" class="input" type="text" placeholder=" " />
+          <div class="cut"></div>
+          <label for="first name" class="placeholder">Email ID *</label>
+        </div>
+        <div class="col-lg-12 input-container ic2" >
+          <input id="lastname" class="input" type="password" placeholder=" " [type]="password"/>
+          <div class="cut"></div>
+          <label for="lastname" class="placeholder">Password *</label>
+          <!-- <i class="fa fa-eye" id="togglePassword" style="margin-left: -40px; cursor: pointer;color:#F6BD23;"></i>           -->
+          <span (click)="onClick()" style="margin-left: -40px; cursor: pointer;color:#F6BD23;">
+            <i class="fa fa-eye-slash" aria-hidden="true" *ngIf="!show"></i>
+            <i class="fa fa-eye" aria-hidden="true" *ngIf="show"></i>
+          </span>
+        </div>
+        <div class="col-lg-5 mt-3">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1"> &nbsp;&nbsp;Remember me</label>
+          </div>
+        </div>
+        <div class="col-lg-2"></div>
+        <div class="col-lg-5 mt-3 text-right"><a href="#">Forgot Password?</a></div>
+        <div class="col-lg-12"><button type="text" class="btn btn-primary mt-5 w-100" style="height:40px;">Login</button></div>
+      </div>
+    </div>
+  </div>   
+</div>

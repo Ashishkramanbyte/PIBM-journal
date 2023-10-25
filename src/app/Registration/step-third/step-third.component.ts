@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./step-third.component.css']
 })
 export class StepThirdComponent {
-
+ 
 }
