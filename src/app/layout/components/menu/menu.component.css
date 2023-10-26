@@ -39,7 +39,7 @@
   background-color: #f0f0f0;
 }
   
-.main-menu{background-color: #0E489F;position: sticky;z-index: 9999;top:82px;}
+.main-menu{background-color: #0E489F;position: sticky;z-index: 9999;top:65px;}
 .menu-column{background-color: aqua;}
 
 /* navigation bar */
@@ -102,8 +102,10 @@ button{color:#fff;}
   border-bottom: 2px solid #ffffff;
 }
 /*end of mega menu*/
-
-@media (max-width: 575.98px) {
+@media (min-width:320px) and (max-width:600px){
+  .main-menu{top:168px;}
+}
+/* @media (max-width: 575.98px) {
   .megamenu {
     padding: 0;
   }
@@ -125,7 +127,7 @@ button{color:#fff;}
 }
 
 @media (min-width: 1200px) {
-}
+} */
 
 
 /* New */
